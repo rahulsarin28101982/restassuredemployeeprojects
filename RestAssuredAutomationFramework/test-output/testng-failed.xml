@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestAssured]" guice-stage="DEVELOPMENT">
+  <test name="restassured(failed)">
+    <classes>
+      <class name="com.employeeapi.testcases.TC002_GET_SINGLE_EMPLOYEE_RECORD">
+        <methods>
+          <include name="getResponseBody"/>
+          <include name="getEmployeeData"/>
+          <include name="checkStatusLine"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="checkStatusCode"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC002_GET_SINGLE_EMPLOYEE_RECORD -->
+      <class name="com.employeeapi.testcases.TC004_PUT_EMPLOYEES_RECORD">
+        <methods>
+          <include name="checkServerType"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="updateEmployee"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC004_PUT_EMPLOYEES_RECORD -->
+      <class name="com.employeeapi.testcases.TC005_PUT_EMPLOYEES_RECORD">
+        <methods>
+          <include name="setup"/>
+          <include name="checkContentEncoding"/>
+          <include name="checkStatusCode"/>
+          <include name="checkStatusLine"/>
+          <include name="checkServerType"/>
+          <include name="checkContentType"/>
+          <include name="tearDown"/>
+          <include name="deleteEmployee"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC005_PUT_EMPLOYEES_RECORD -->
+      <class name="com.employeeapi.testcases.TC003_POST_EMPLOYEES_RECORD">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkContentEncoding"/>
+          <include name="setup"/>
+          <include name="createEmployee"/>
+          <include name="checkContentType"/>
+          <include name="checkServerType"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC003_POST_EMPLOYEES_RECORD -->
+      <class name="com.employeeapi.testcases.TC001_GET_ALL_EMPLOYEES">
+        <methods>
+          <include name="getAllEmployess"/>
+          <include name="checkContentLength"/>
+          <include name="setup"/>
+          <include name="checkResponseTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC001_GET_ALL_EMPLOYEES -->
+    </classes>
+  </test> <!-- restassured(failed) -->
+</suite> <!-- Failed suite [RestAssured] -->
